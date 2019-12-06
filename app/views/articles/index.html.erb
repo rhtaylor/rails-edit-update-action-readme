@@ -1,3 +1,5 @@
 <% @articles.each do |article| %>
   <div><%= article.title %></div>
+  
+  <div><%= link_to article.to_s, article_path(article) %></div>
 <% end %>
